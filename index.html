@@ -13,13 +13,16 @@ margin-top: 100px;
 }
 span{
 font-size:32px;
-padding-left: 500px;
 }
 .active{
 color:#404040;
 }
 .lowimg{
-  text-align: center;
+  text-align: center; margin-top: 30px;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
 }
 .menu{
   padding-top: 40px; text-align: right; margin-right: 50px;
@@ -32,6 +35,40 @@ color:#404040;
   text-align: center;
   grid-template-columns: 150px 1fr;
 }
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 </style>
 <meta charset="utf-8">
 </head>
@@ -48,6 +85,10 @@ color:#404040;
         <a href="contact.html" target="_self" title="contact page">CONTACT</a>
       </span>
     </div>
+</div>
+
+<div class="lowimg">
+<img src="img/main.png">
 </div>
 
 </body>
